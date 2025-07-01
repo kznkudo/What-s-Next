@@ -1,0 +1,93 @@
+:root {
+    --primary: #121212;
+    --focus-indicator: #FFC300;
+    --hover: #FFC300;
+    --secondary: #E0F1FF;
+    --darkbase: #1E1E1E;
+    --text: #E0F1FF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkbase);
+    color: var(--text);
+}
+
+header {
+    background: var(--primary);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: var(--focus-indicator);
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: var(--text);
+    background: var(--primary);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover, nav a:focus {
+    background: var(--hover);
+    color: var(--primary);
+    text-decoration: underline;
+    outline: 2px solid var(--focus-indicator);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: var(--primary);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 119, 182, 0.08);
+}
+
+footer {
+    background: var(--primary);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+form.bg-dark {
+  background-color: #1e1e2f !important;
+  border-color: #333;
+}
+
+form .form-control.bg-secondary {
+  background-color: #343a40 !important;
+  color: #fff !important;
+}
+
+form .form-control::placeholder {
+  color: #adb5bd;
+}
+
+form .form-control:focus {
+  background-color: #3c3f45;
+  border-color: #495057;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+form label {
+  color: #f8f9fa !important;
+}
+
