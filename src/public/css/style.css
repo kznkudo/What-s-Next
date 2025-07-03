@@ -5,6 +5,9 @@
     --secondary: #E0F1FF;
     --darkbase: #1E1E1E;
     --text: #E0F1FF;
+    --prim-text:#5771ff;
+    --accent:#e6ad00;
+
 }
 
 body {
@@ -24,7 +27,7 @@ header {
 
 h1 {
     margin: 0;
-    color: var(--focus-indicator);
+    color: var(--prim-text);
 }
 
 nav {
@@ -48,8 +51,8 @@ nav a:hover, nav a:focus {
     outline: 2px solid var(--focus-indicator);
 }
 
-.container {
-    width: 80%;
+.container2 {
+    width: 100;
     margin: auto;
     overflow: hidden;
     background: var(--primary);
@@ -90,4 +93,21 @@ form .form-control:focus {
 form label {
   color: #f8f9fa !important;
 }
+
+
+.custom-primary:hover {
+  background-color: var(--hover); /* leicht heller */
+  border-color: var(--hover);
+}
+
+.custom-primary:focus,
+.custom-primary:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--focus-indicator); 
+}
+.form-check-input:checked {
+    background-color: #FFC300;   /* Innenkreis */
+    border-color: #FFC300;       /* Rand */
+  }
+
 
