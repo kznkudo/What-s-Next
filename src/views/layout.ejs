@@ -14,7 +14,12 @@
   </head>
 
   <body>
-    <% if (!hideLayout) { %> <%- include('partials/header') %> <% } %>
+    <% if (!hideLayout) { %> 
+      <%- include('partials/header') %> 
+    <% } else { %>
+      <%- include('partials/header_logout') %>  
+    <% } %>
+    
 
     <main><%- body %></main>
 

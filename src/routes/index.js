@@ -10,7 +10,7 @@ router.get('/login', (req, res) => {
     res.render('login', { hideLayout: false, title: "What's Next" });
 });
 router.get('/register', (req, res) => {
-    res.render('register', { hideLayout: false, title: "What's Next" });
+    res.render('register', { hideLayout: true, title: "What's Next" });
 });
 router.get('/dashboard', (req, res) => {
     res.render('dashboard', { hideLayout: false, title: "What's Next" });
